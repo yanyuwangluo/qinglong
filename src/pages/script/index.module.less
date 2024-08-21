@@ -1,0 +1,30 @@
+@import '~@/styles/variable.less';
+
+.left-tree {
+  &-container {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    height: calc(100vh - 128px);
+    height: calc(100vh - var(--vh-offset, 0px) - 128px);
+    display: flex;
+    flex-direction: column;
+  }
+  &-scroller {
+    flex: 1;
+    overflow: auto;
+    padding-top: 6px;
+  }
+}
+
+.log-container {
+  display: flex;
+  position: relative;
+}
+
+:global {
+  .Pane.vertical.Pane1 {
+    padding-right: 5px;
+    border-right: 1px dashed #f0f0f0;
+  }
+}
