@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ARG QL_MAINTAINER="whyour"
+ARG QL_MAINTAINER="yanyuwangluo"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=master
