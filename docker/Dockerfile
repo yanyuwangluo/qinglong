@@ -15,7 +15,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
 WORKDIR ${QL_DIR}
 
 RUN set -x \
-    && sed -i 's|dl-cdn.alpinelinux.org|mirror.example.com|g' /etc/apk/repositories \
+    && sed -i 's|mirrors.aliyun.com|g' /etc/apk/repositories \
     && apk update -f \
     && apk upgrade \
     && apk --no-cache add -f bash \
